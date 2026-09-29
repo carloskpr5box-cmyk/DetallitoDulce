@@ -6,21 +6,46 @@
     <link rel="stylesheet" href="Redesmenu.css">
     <link rel="stylesheet" href="Tipografia.css">
     <link rel="icon" href="Imagenes/Icon.png">
+    <link rel="stylesheet" href="menu-desplegable.css">
+
     <title>Redes sociales</title>
 </head>
 <body>
-    <main><section id="Botones_redes"><header  class="flex_box header">
-        <div><h2 class="Titulo">Detallito Dulce</h2></div>
-            <nav class="nav_menu"><ul class="lista flex_box">
-        <li class="item--link"><a class="link"href="index.html" area-label="Link para dirigirse al inicio">Inicio</a></li>
-        <li class="item--link"><a class="link"href="Galeria_galletas.html" area-label="link para dirigirse a la galeria de galleatas">Galletas.</a></li>
-        <li class="item--link"><a class="link"href="Galeria_pasteles.html" area-label="link para dirigirse a la galeria de pasteles">Pasteles.</a></li>
-            </ul>
-        </nav>
-    </header></section>
-    <section><h2 class="Subtitulo item--postref">Pide tu postre favorito mandando un mensaje a nuestro facebook,instagram o whatsapp, envios en zimapan</h2></section>
-    <section class="Redes_sociales block"><div class="redes "style="margin:auto"><a class="link" style="color:rgb(240, 255, 255)" area-label="Link para contactarnos por facebook"href="https://www.facebook.com/rosyramirezfranco?locale=es_LA">Facebook</a></div>
-<section class="Redes_sociales block"> <div class="redes "style="margin:auto"><a class="link"style="color:rgb(240, 255, 255)" area-label="Link para contactarnos por instagram"href="https://www.instagram.com/rosyramirezfranco?igsi=MXhuZ2E5dzJuYWliZw==">Instagram</a></div></section>
+    <script src="Dom_food.js"></script>
+    <main>
+    <section id="Botones_redes">
+        <header class="flex_box header">
+            <div><h2 class="Titulo">Detallito Dulce</h2></div>
+            <nav class="nav_menu" data-menu-nav>
+                <ul class="lista flex_box">
+                    <li class="item--link"><a class="link header__nav-link" href="index.html" aria-label="Link para dirigirse al inicio">Inicio</a></li>
+                    <li class="item--link"><a class="link header__nav-link" href="Galeria_galletas.html" aria-label="link para dirigirse a la galeria de galletas">Galletas</a></li>
+                    <li class="item--link"><a class="link header__nav-link" href="Galeria_pasteles.html" aria-label="link para dirigirse a la galeria de pasteles">Pasteles</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Abrir menú">
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+            </button>
+        </header>
+    </section>
+
+    <section><h2 class="Subtitulo item--postref">Pide tu postre favorito mandando un mensaje a nuestro Facebook, Instagram o WhatsApp. Envíos en Zimapán.</h2></section>
+
+    <section class="Redes_sociales block">
+        <div class="redes" style="margin:auto">
+            <a class="link" style="color:rgb(240, 255, 255)" aria-label="Link para contactarnos por Facebook" href="https://www.facebook.com/rosyramirezfranco?locale=es_LA">Facebook</a>
+        </div>
+    </section>
+
+    <section class="Redes_sociales block">
+        <div class="redes" style="margin:auto">
+            <a class="link" style="color:rgb(240, 255, 255)" aria-label="Link para contactarnos por Instagram" href="https://www.instagram.com/rosyramirezfranco?igsi=MXhuZ2E5dzJuYWliZw==">Instagram</a>
+        </div>
+    </section>
     </main>
+
+    <script src="menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+/* ===========================================================================
+   MENU.CSS — Estilos para el menú desplegable (botón + panel móvil)
+   Usa selectores por atributo ([data-menu-nav]) en vez de renombrar tus
+   clases, para no chocar con lo que ya tienes en Diseño.css.
+   =========================================================================== */
+
+.header {
+  position: relative; /* para que el panel móvil se ancle justo debajo */
+}
+
+/* --- Botón hamburguesa (oculto en escritorio) --- */
+.header__menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.header__menu-toggle-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #fbf6f3;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header__menu-toggle[aria-expanded="true"] .header__menu-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.header__menu-toggle[aria-expanded="true"] .header__menu-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.header__menu-toggle[aria-expanded="true"] .header__menu-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* --- Celular: el menú se convierte en panel de pantalla completa ---
+   Usamos position: fixed + inset: 0 (cubre toda la ventana) en vez de
+   anclarlo al header, para que nunca dependa de la altura del header
+   ni pueda quedar detrás de imágenes u otro contenido de la página. */
+@media (max-width: 640px) {
+  .header__menu-toggle {
+    display: flex;
+    position: relative;
+    z-index: 10000; /* se mantiene visible/clicable incluso con el panel abierto */
+  }
+
+  [data-menu-nav] {
+    position: fixed;
+    inset: 0;
+    background-color: #472f19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 9999;
+  }
+
+  /* Esta clase la agrega/quita menu.js */
+  [data-menu-nav].header__nav--abierto {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  [data-menu-nav] ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header__nav-link {
+    display: block;
+    padding: 0.85rem 0;
+    color: #fbf6f3 !important;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}

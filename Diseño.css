@@ -81,7 +81,8 @@ header {
   color: #fbf6f3;
   letter-spacing: 1.5px;
   margin: 0;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
 }
 .caja{
   transform: skew(-3deg, 1deg) rotate(1deg)

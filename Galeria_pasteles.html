@@ -1,66 +1,80 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="Tipografia.css">
-    <link rel="icon" href="Imagenes/Icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    </head>
-    <title>Galeria pasteles</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria pasteles</title>
+  <link rel="icon" href="Imagenes/Icon.png">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="Tipografia.css">
+  <link rel="stylesheet" href="menu-desplegable.css">
+</head>
 <body>
-    <script href="Dom_food.js"></script>
-<div class="Content"><header style="background-color: rgb(245, 190, 123);"class="header flexbox">
-    
-        <div class="nav_box flexbox"><h2 class="Titulo">Detallito Dulce</h2></div>
-        <nav class="nav">
-        <ul class="nav_list">
-            <li class="nav_item "><a style="list-style:none" class="nav_link"  href="index.html" aria-label="Enlace para dirigirse al menu principal ">Inicio</a></li>
-            <li class="nav_item"><a  style="list-style:none"class="nav_link"  href="Galeria_galletas.html" aria-leabel="Enlace para dirigirse a la galeria de galletas">Galletas</a></li>
-            <li class="nav_item"><a style="list-style:none" class="nav_link"  href="redes.html" aria-label="Enlace para dirigirse a las redes sociales para pedir su postre ">Contacto</a></li>
-        </ul>
+<script src="Dom_food.js"></script>
+
+<div class="Content">
+  <header style="background-color: rgb(245, 190, 123);" class="header flexbox">
+    <div class="nav_box flexbox"><h2 class="Titulo">Detallito Dulce</h2></div>
+    <nav class="nav" data-menu-nav>
+      <ul class="nav_list">
+        <li class="nav_item"><a style="list-style:none" class="nav_link header__nav-link" href="index.html" aria-label="Enlace para dirigirse al menú principal">Inicio</a></li>
+        <li class="nav_item"><a style="list-style:none" class="nav_link header__nav-link" href="Galeria_galletas.html" aria-label="Enlace para dirigirse a la galería de galletas">Galletas</a></li>
+        <li class="nav_item"><a style="list-style:none" class="nav_link header__nav-link" href="redes.html" aria-label="Enlace para dirigirse a las redes sociales para pedir su postre">Contacto</a></li>
+      </ul>
     </nav>
-</header>
-<main>
-    
-    <section><H2>Pasteles perzonalidos</H2></section><section class="caja--imagenes" ><img src="Imagenes/Ada-small.png" class="imagen_pastel" alt="Pastel de ada en su casa con flores y champiñones"
-srcset="Imagenes/Ada-small.png 400w,
-Imagenes/Ada_medio.png 600w,
-Imagenes/Ada_grande.png 1000w"
-sizes="(max-width:400px)350px,400px
-(max-width:600px)350px,600px"></section>
-<section class="caja--imagenes"><img src="Imagenes/Pastel-cerveza-peque.jpg" class="imagen_pastel animacion_galleria" alt="Pastel decorado con cerveza y gelatina de decoracion de hielos"
-srcset="Imagenes/Pastel-cerveza-peque.jpg 400w,
-Imagenes/Pastel-cerveza-medium.jpg 600w,
-Imagenes/Pastel-cerveza-medium.jpg 1000w"
-sizes="(max-width:400px)350px,400px
-(max-width:600px)350px,600px">
-</div></section>
-<section> <div class="caja--imagenes "><img src="Imagenes/Pastel_zombi.png" class="imagen_pastel animacion_galleria"  alt="Pastel tematico Dead walking dead"
-srcset="Imagenes/Pastel_zombi_pequeña.png 400w,
-Imagenes/Pastel_zombi_medio.png 600w,
-Imagenes/Pastel_zombi_grande.png 1000w"
-sizes="(max-width:400px)350px,400px"
-sizes="(max-width:600)400px,600px"
+    <button class="header__menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Abrir menú">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+  </header>
 
-></div></section>
-<section><div class="caja--imagenes"><img  src="Imagenes/Pastel_noculs_pequeño.jpeg" class="imagen_pastel animacion_galleria"  alt="Pastel tematico de noculs"
-    srset="Imagenes/Pastel_noculs_pequeño.jpeg 400w,
-    Imagenes/Pastel_noculs_medio.jpeg 600w,
-    Imagenes/Pastel_noculs_grande.jpeg 1000w"
-    sizes="(max-width:400px)350px,400px
-    (max-width:600px)400px,600px"></div></section>
-<section><div class="caja--imagenes"><img src="Imagenes/Galleta_pika_pequeño.jpeg"  class="imagen_pastel"
-    srcset="Imagenes/Galleta_pika_pequeño.jpeg 400w,
-    Imagenes/Galleta_pika_mediano.jpeg 600w,
-    Imagenes/Galleta_pika_grande.jpeg 1000w"
-    sizes="(max-width:400px)350px,400px"
-sizes="(max-width:600)400px,600px"></div></section></main>
+  <main>
+    <section><h2>Pasteles personalizados</h2></section>
 
-<footer class="footer"><div><p>@Detallito todos derechos reservados 2026</p></div>
-<div><p>Entregas en zimapan</div></p></footer></div>
+    <section class="caja--imagenes">
+      <img src="Imagenes/Ada-small.png" class="imagen_pastel" alt="Pastel de Ada en su casa con flores y champiñones"
+        srcset="Imagenes/Ada-small.png 400w, Imagenes/Ada_medio.png 600w, Imagenes/Ada_grande.png 1000w"
+        sizes="(max-width: 400px) 350px, (max-width: 600px) 400px, 600px">
+    </section>
 
+    <section class="caja--imagenes">
+      <img src="Imagenes/Pastel-cerveza-peque.jpg" class="imagen_pastel animacion_galleria" alt="Pastel decorado con cerveza y gelatina de decoración de hielos"
+        srcset="Imagenes/Pastel-cerveza-peque.jpg 400w, Imagenes/Pastel-cerveza-medium.jpg 600w, Imagenes/Pastel-cerveza-medium.jpg 1000w"
+        sizes="(max-width: 400px) 350px, (max-width: 600px) 400px, 600px">
+    </section>
+
+    <section>
+      <div class="caja--imagenes">
+        <img src="Imagenes/Pastel_zombi_pequeña.png" class="imagen_pastel animacion_galleria" alt="Pastel temático de The Walking Dead"
+          srcset="Imagenes/Pastel_zombi_pequeña.png 400w, Imagenes/Pastel_zombi_medio.png 600w, Imagenes/Pastel_zombi_grande.png 1000w"
+          sizes="(max-width: 400px) 350px, (max-width: 600px) 400px, 600px">
+      </div>
+    </section>
+
+    <section>
+      <div class="caja--imagenes">
+        <img src="Imagenes/Pastel_noculs_pequeño.jpeg" class="imagen_pastel animacion_galleria" alt="Pastel temático de Among Us"
+          srcset="Imagenes/Pastel_noculs_pequeño.jpeg 400w, Imagenes/Pastel_noculs_medio.jpeg 600w, Imagenes/Pastel_noculs_grande.jpeg 1000w"
+          sizes="(max-width: 400px) 350px, (max-width: 600px) 400px, 600px">
+      </div>
+    </section>
+
+    <section>
+      <div class="caja--imagenes">
+        <img src="Imagenes/Galleta_pika_pequeño.jpeg" class="imagen_pastel" alt="Galleta temática de Pikachu"
+          srcset="Imagenes/Galleta_pika_pequeño.jpeg 400w, Imagenes/Galleta_pika_mediano.jpeg 600w, Imagenes/Galleta_pika_grande.jpeg 1000w"
+          sizes="(max-width: 400px) 350px, (max-width: 600px) 400px, 600px">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><p>@Detallito todos derechos reservados 2026</p></div>
+    <div><p>Entregas en Zimapán</p></div>
+  </footer>
+</div>
+
+<script src="menu.js"></script>
 </body>
-
 </html>

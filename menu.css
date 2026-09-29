@@ -8,7 +8,7 @@ body{
 .Titulo{
     
     color:rgb(94, 42, 4);
-    font-size:18px;
+    font-size:25px;
     margin-left: 8px;
     text-align: center;
     font-family:cursi
@@ -17,6 +17,9 @@ body{
     display:grid;
     grid-template-rows: auto 1fr auto;
     min-height: 190dvh;
+}
+.header__menu-toggle{
+    margin-top: 7px;
 }
 
 .header{

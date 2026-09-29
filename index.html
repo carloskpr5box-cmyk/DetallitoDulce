@@ -4,6 +4,7 @@
     <title>Detallito Dulce Pasteles y galletas perzonalizadas</title>
     <link rel="stylesheet" href="Diseño.css">
     <link rel="stylesheet" href="Tipografia.css">
+    <link rel="stylesheet" href="menu-desplegable.css">
     <link rel="icon" href="Imagenes/Icon.png">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +19,16 @@
 <div class="Content">
 <header class="header flexbox  animacion_inicio" >
             <div class="item_titulo"><h2 class="Titulo">Detallito Dulce</h2></div>
-            <nav class="item_nav"><ul class="list_item">
-                <li ><a style="text-decoration: none" class="link_item" area-label="Enlace para dirgirge a la galeria de galletas" href="Galeria_galletas.html">Galletas</a></li>
-                <li><a style="text-decoration:none"class="link_item" area-label="Enlace para dirigise a la galeria de pasteles"href="Galeria_pasteles.html">Pasteles</a></li>
-                <li><a style="text-decoration:none"class="link_item" area-label="Enlace para dirigise a nuestros contactos para hacer su pedido " href="Redes.html">Contacto</a></li>
+            <nav class="item_nav" data-menu-nav><ul class="list_item">
+                <li ><a style="text-decoration: none" class="link_item header__nav-link" area-label="Enlace para dirgirge a la galeria de galletas" href="Galeria_galletas.html">Galletas</a></li>
+                <li><a style="text-decoration:none"class="link_item header__nav-link" area-label="Enlace para dirigise a la galeria de pasteles"href="Galeria_pasteles.html">Pasteles</a></li>
+                <li><a style="text-decoration:none"class="link_item header__nav-link" area-label="Enlace para dirigise a nuestros contactos para hacer su pedido " href="Redes.html">Contacto</a></li>
             </ul></nav>
+            <button class="header__menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Abrir menú">
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+                <span class="header__menu-toggle-bar"></span>
+            </button>
     </header>
 <main class="main" ><div class="box_item animation_inicio "><p class="Subtitulo">Postres hechos a mano pensados en ti <br></p>
     <h1 class="H1 " style="margin-top:2px,">Pasteles y galletas perzonalidas para momentos que quieras recordar</h1>
@@ -38,16 +44,7 @@
 </main>
 <footer class="footer flexbox animacion_inicio"><div class="contenedor grid-item"><p class="footer_titulo" style="font-size: 12px">Detallito Dulce    </p></div>
 <div class="derechos de autor animacion_inicio"><p  class="footer_titulo"style="font-size: 12px"><br>@2026 Detallito Dulce Todos los derechos reservados</p></div></footer>
+</div>
+<script src="menu.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

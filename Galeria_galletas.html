@@ -3,66 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria galletas</title>
     <link rel="icon" href="Imagenes/Icon.png">
     <link rel="stylesheet" href="menu2.css">
     <link rel="stylesheet" href="Tipografia.css">
+    <link rel="stylesheet" href="menu-desplegable2.css">
 </head>
-<title>Galeria galletas</title>
 <body>
-    <script href="Dom_food.js"></script>
-    <div class="Content"><header class="flexbox menu">
-        <div class="item_titulo"><h2 style="font-size:18px;"  " class="Titulo"  >Detallito Dulce</h2></div>
-        <nav class="nav_item">
+    <script src="Dom_food.js"></script>
+    <div class="Content">
+    <header class="flexbox menu">
+        <div class="item_titulo"><h2 style="font-size:18px;" class="Titulo">Detallito Dulce</h2></div>
+        <nav class="nav_item" data-menu-nav>
         <ul class="menu">
-        <li class="list_item"><a class="menu1" href="index.html" >Inicio</a></li>
-        <li class="list_item"><a class="menu1" href="Galeria_pasteles.html">Pasteles</a></li>
-        <li class="list_item"><a class="menu1" href="redes.html">Contacto</a></li>
+        <li class="list_item"><a class="menu1 header__nav-link" href="index.html">Inicio</a></li>
+        <li class="list_item"><a class="menu1 header__nav-link" href="Galeria_pasteles.html">Pasteles</a></li>
+        <li class="list_item"><a class="menu1 header__nav-link" href="redes.html">Contacto</a></li>
         </ul>
         </nav>
-        
+        <button class="header__menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Abrir menú">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
     </header>
     <main class="seccion_galleta">
         <section><p class="Titulo_galletas">Galletas</p>
-            <div class="box_img_galletas flexbox"><img src="Galletas/Galleta_oso_pequeño.jpeg"class="Imagenes_galletas "
+            <div class="box_img_galletas flexbox">
+                <img src="Galletas/Galleta_oso_pequeño.jpeg" class="Imagenes_galletas"
                     srcset="Galletas/Galleta_oso_pequeño.jpeg 400w,
-                    Galletas/Galleta_osos_mediana.jpeg 600w,
-                    Galletas/Galletas_osos_grande.jpeg 1000w"
-                    sizes="(max-width:400px)230px,400px
-                    (max-width:600px)400px,600px">
-</div>
-<div class="box_img_galletas flexbox "><img src="Galletas/MJackson-medium.png" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta de Michol jackson"
-        srcset="Galletas/MJackson-medium.png 400w,
-        Galletas/MJackson-medium.png"></div></section>
-    <section><div class="box_img_galletas flexbox"><img  src="Galletas/Galleta_chof.jpeg" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta tematica de Tony choper"
-        srcset="Galletas/Galleta_chof_pequeño.jpeg 400w,
-        Galletas/Galleta_chof_medio.jpeg 600w,
-        Galletas/Galleta_chof_grande.jpeg 1000w"
-        sizes="(max-width:400px) 230px,400px"
-        sizes="(max-width:600px)400px,600px"></div></section>
-        <section><div class="box_img_galletas flexbox"><img src="Galletas/Galleta_lufy_mediano.jpeg" class="Imagenes_galletas Animacion_galeria_galletas"alt="Galleta tematica futuro rey de los piratas"
-            srcset="Galletas/Galleta_lufy_pequeño.jpeg 400w,
-            Galletas/Galleta_lufy_mediano.jpeg 600w,
-            Galletas/Galleta_lufy_grande.jpeg 1000w" ></div></section>
-            
-        <section><div class="box_img_galletas flexbox"><img src="Galletas/Galleta_mentiroso_mediano.jpeg" class="Imagenes_galletas Animacion_galeria_galletas "alt="Galleta el rey de los francotiradores" 
-            srcset="Galletas/Galleta_mentiroso_pequeño.jpeg 400w ,
-            Galletas/Galleta_mentiroso_mediano.jpeg 600w,
-            Galletas/Galleta_mentiroso_grande.jpeg 1000w"></div></section>
-            <div class="box_invicible"></div>
-            <section>
-<div class="box_img_galletas flexbox"><img class="Imagenes_galletas" src="Galletas/Galleta_demon_pequeña.jpeg"
-    srcset="Galletas/Galleta_demon_pequeña.jpeg 400w,
-    Galletas/Galleta_demon_mediana.jpeg 600w;
-    Galletas/Galleta_demon_grande.jpeg 1000w"
-    sizes="(max-width:400px)230px,400px,
-    (max-width:600px)400px,600px"></div>
-            
-            </section>
-
+                            Galletas/Galleta_osos_mediana.jpeg 600w,
+                            Galletas/Galletas_osos_grande.jpeg 1000w"
+                    sizes="(max-width: 400px) 230px, (max-width: 600px) 400px, 600px"
+                    alt="Galleta temática de osos">
+            </div>
+            <div class="box_img_galletas flexbox">
+                <img src="Galletas/MJackson-medium.png" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta de Michael Jackson">
+            </div>
+        </section>
+        <section>
+            <div class="box_img_galletas flexbox">
+                <img src="Galletas/Galleta_chof.jpeg" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta temática de Tony Chopper"
+                    srcset="Galletas/Galleta_chof_pequeño.jpeg 400w,
+                            Galletas/Galleta_chof_medio.jpeg 600w,
+                            Galletas/Galleta_chof_grande.jpeg 1000w"
+                    sizes="(max-width: 400px) 230px, (max-width: 600px) 400px, 600px">
+            </div>
+        </section>
+        <section>
+            <div class="box_img_galletas flexbox">
+                <img src="Galletas/Galleta_lufy_mediano.jpeg" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta temática del futuro rey de los piratas"
+                    srcset="Galletas/Galleta_lufy_pequeño.jpeg 400w,
+                            Galletas/Galleta_lufy_mediano.jpeg 600w,
+                            Galletas/Galleta_lufy_grande.jpeg 1000w"
+                    sizes="(max-width: 400px) 230px, (max-width: 600px) 400px, 600px">
+            </div>
+        </section>
+        <section>
+            <div class="box_img_galletas flexbox">
+                <img src="Galletas/Galleta_mentiroso_mediano.jpeg" class="Imagenes_galletas Animacion_galeria_galletas" alt="Galleta el rey de los francotiradores"
+                    srcset="Galletas/Galleta_mentiroso_pequeño.jpeg 400w,
+                            Galletas/Galleta_mentiroso_mediano.jpeg 600w,
+                            Galletas/Galleta_mentiroso_grande.jpeg 1000w"
+                    sizes="(max-width: 400px) 230px, (max-width: 600px) 400px, 600px">
+            </div>
+        </section>
+        <div class="box_invicible"></div>
+        <section>
+            <div class="box_img_galletas flexbox">
+                <img class="Imagenes_galletas" src="Galletas/Galleta_demon_pequeña.jpeg" alt="Galleta temática de cazador de demonios"
+                    srcset="Galletas/Galleta_demon_pequeña.jpeg 400w,
+                            Galletas/Galleta_demon_mediana.jpeg 600w,
+                            Galletas/Galleta_demon_grande.jpeg 1000w"
+                    sizes="(max-width: 400px) 230px, (max-width: 600px) 400px, 600px">
+            </div>
+        </section>
     </main>
-                <footer class="footer"><br>Detallito Dulce <br>@Detallito Dulce Derechos reservados </footer></div>
-
-    
-    
+    <footer class="footer"><br>Detallito Dulce <br>@Detallito Dulce Derechos reservados</footer>
+    </div>
+    <script src="menu.js"></script>
 </body>
 </html>
