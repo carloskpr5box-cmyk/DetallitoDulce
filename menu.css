@@ -18,9 +18,7 @@ body{
     grid-template-rows: auto 1fr auto;
     min-height: 190dvh;
 }
-.header__menu-toggle{
-    margin-top: 7px;
-}
+
 
 .header{
 justify-content: space-between;
