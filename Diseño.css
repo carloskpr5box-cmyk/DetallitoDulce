@@ -191,6 +191,21 @@ header {
   align-content: center;
   
 }
+.info_home {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.info_home h2 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+}
+.info_home p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
 
 .postres {
   transition-property: color, transform;
