@@ -20,6 +20,7 @@ body{
 }
 .Titulo_galletas{
     margin-top: 2px;
+    margin-bottom: 8px;
     font-size: 30px;
     color:#5C2616
 
@@ -46,6 +47,12 @@ body{
     
 
 }
+.Servicios{
+    margin: 2px;
+    font-size: 12px;
+    align-content: center;
+}
+
 .Animacion_galeria_galletas{
     animation-name: Galeria_Galletas;
     animation-timeline:view();
